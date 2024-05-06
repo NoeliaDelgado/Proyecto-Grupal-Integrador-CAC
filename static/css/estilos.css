@@ -1,0 +1,80 @@
+/*---Mobile First---*/
+
+/*HEADER*/
+
+
+/*NAV*/
+
+
+/*MAIN*/
+
+/*-----------------index.html-----------------*/
+
+
+/*-----------------coberturas.html-----------------*/
+
+
+/*-----------------especialidades.html-----------------*/
+
+
+/*-----------------quienesSomos.html-----------------*/
+
+
+
+/*FOOTER*/
+
+
+
+/*---small and medium devices---*/
+
+@media only screen and (min-width: 600px){
+    /*HEADER*/
+
+
+    /*NAV*/
+
+
+    /*MAIN*/
+
+    /*-----------------index.html-----------------*/
+
+
+    /*-----------------coberturas.html-----------------*/
+
+
+    /*-----------------especialidades.html-----------------*/
+
+
+    /*-----------------quienesSomos.html-----------------*/
+
+
+
+    /*FOOTER*/
+}
+
+/*---large and extra large devices---*/
+
+@media only screen and (min-width: 992px){
+    /*HEADER*/
+
+
+    /*NAV*/
+
+
+    /*MAIN*/
+
+    /*-----------------index.html-----------------*/
+
+
+    /*-----------------coberturas.html-----------------*/
+
+
+    /*-----------------especialidades.html-----------------*/
+
+
+    /*-----------------quienesSomos.html-----------------*/
+
+
+
+    /*FOOTER*/
+}
