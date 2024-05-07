@@ -1,0 +1,10 @@
+# Ignorar directorios
+/.cache/
+/.vscode/
+/node_modules/
+/yarn.lock
+
+# Ignorar archivos
+*.log
+*.tmp
+*.exe
