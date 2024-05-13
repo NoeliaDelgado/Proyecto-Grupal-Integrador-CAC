@@ -3,9 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
+<<<<<<< HEAD
     <meta name="viewport" content="width=device-width" initial-scale=1.0">
     <link rel="stylesheet" href="static/css/estilos.css">
+=======
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <meta name="keywords" content="CAC Medical, clinica, consultorios, Buenos Aires, Médicos">
+    <meta name="description" content="Somos una clínica especializada que proporciona servicios médicos integrales y tratamientos personalizados para satisfacer las necesidades de salud de sus pacientes.">
+    <link rel="stylesheet" href="static/css/index.css">
+>>>>>>> 5bad0214f56537da1a270be418483504e77e831b
     <link rel="icon" href="static/images/favicon.ico">
+    <script src="https://kit.fontawesome.com/283daa4351.js" crossorigin="anonymous"></script>
     <title>CAC Medical</title>
 </head>
 
@@ -14,7 +22,7 @@
         <!--hay que agregar el logo en la carpeta images-->
         <a href="index.html"> <img class="imglogo" src="static/images/logo.png" alt="logo"> </a>
         <!--solicitar turno-->
-        <a href="templates/turnos.html" class="btn-turno">Solicitar turno</a>
+        <a href="templates/contacto.html" class="btn-turno">Solicitar turno</a>
 
     </header>
 
@@ -29,53 +37,147 @@
             <li class ="item-nav"><a href="templates/quienesSomos.html">Quienes somos</a></li>
             <li class ="item-nav"><a href="templates/especialidades.html">Especialidades</a></li>
             <li class ="item-nav"><a href="templates/coberturas.html">Cobertura</a></li>
-            <li class ="item-nav"><a href="index.html#c2">Contacto</a></li>
+            <li class ="item-nav"><a href="templates/contacto.html">Contacto</a></li>
         </ul>
 
     </nav>
 
     <main>
-
-        <section>
-            <!--animacion dengue-->
+        <section id="slider">
+            <!--Slider-->
+        <div class="slider-box">
+            <ul>
+                <li><img src="static/images/slider/slider1.jpg" alt="slider1"></li>
+                <li><img src="static/images/slider/slider2.jpg" alt="slider2"></li>
+                <li><img src="static/images/slider/slider3.jpg" alt="slider3"></li>
+                <li><img src="static/images/slider/slider4.jpg" alt="slider4"></li>
+            </ul>
+         </div>
         </section>
 
+        <section id="opiniones">
+            <h1 class="titulo-opiniones">Opiniones de nuestros pacientes</h1>
+
+            <div class="opiniones-box-container">
+                <!-- box 1 -->
+                <div class="opiniones-box">
+                    <div class="box-top">
+                        <div class="user"> </div>
+                            <div class="user-img">
+                                <img src="static/images/opiniones/opiniones1.png" alt="foto-de-perfil">
+                            </div>
+                                <div class="user-name">
+                                    <strong>Jane Doe</strong>
+                                    <span>@janedoe</span>
+                                </div>
+                        <div class="opiniones">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+
+                        <div class="user-comment">
+                            <p>
+                                Excelente experiencia en la clínica CAC Medical. El personal es amable y profesional, y las instalaciones están impecables. Recomiendo al 100 sus servicios. 
+                            </p>
+                        </div>
+                </div>
+
+                <!-- box 2 -->
+                <div class="opiniones-box">
+                    <div class="box-top">
+                        <div class="user"> </div>
+                            <div class="user-img">
+                                <img src="static/images/opiniones/opiniones2.png" alt="foto-de-perfil">
+                            </div>
+                                <div class="user-name">
+                                    <strong>Pepita SK</strong>
+                                    <span>@pepitask</span>
+                                </div>
+                        <div class="opiniones">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+
+                        <div class="user-comment">
+                            <p>
+                                Todo de 10 como siempre. El médico fue muy detallado en su explicación y me dio opciones para mi tratamiento. Definitivamente recomiendo esta clínica. 
+                            </p>
+                        </div>
+                </div>
+
+                <!-- box 3 -->
+                <div class="opiniones-box">
+                    <div class="box-top">
+                        <div class="user"> </div>
+                            <div class="user-img">
+                                <img src="static/images/opiniones/opiniones3.png" alt="foto-de-perfil">
+                            </div>
+                                <div class="user-name">
+                                    <strong>Fufa Mel</strong>
+                                    <span>@fufamel</span>
+                                </div>
+                        <div class="opiniones">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+
+                        <div class="user-comment">
+                            <p>
+                                Fantástica esta clínica nueva acá en Buenos Aires, hacía falta un establecimiento así. Desde que entré, me sentí bienvenida y cuidada por todo su personal. 
+                            </p>
+                        </div>
+                </div>
+            </div>
+
+        </section>
     </main>
 
-    <footer>
-        <div id="c1" class="maps">
-            <h1  class="titulo-ubicacion">Ubicación</h1>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.562621196938!2d-58.38196390321049!3d-34.6152199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad5e3c692e1%3A0x6f64515556e552da!2sM%C3%A9xico%20782%2C%20C1097AAP%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1715106344975!5m2!1ses!2sar" style="border:0" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <!-- BOX 1 -->
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="static/images/logos-footer/Logo CAC MEDICAL-03.png" alt="logo-cac-medical">
+                    </a>
+                </figure>
+            </div>
+
+            <!-- BOX 2 -->
+            <div class="box">
+                <h2>¡Hey!</h2>
+                <p>¿Queres estar al tanto de nuestras últimas novedades, promociones y noticias?</p>
+                <p>En nuestras plataformas sociales tendrás acceso a contenido exclusivo.</p>
+            </div>
+
+            <!-- BOX 3 -->
+            <div class="box">
+                <h2>Seguinos</h2>
+                <div class="red-social">
+                    <img src="static/images/logos-footer/logo-instagram.png" alt="logo-instagram">
+                    <img src="static/images/logos-footer/logo-facebook.png" alt="logo-facebook">
+                    <img src="static/images/logos-footer/logo-X.png" alt="logo-X">
+                    <img src="static/images/logos-footer/logo-youtube.png" alt="logo-youtube">
+                </div>
+            </div>
         </div>
 
-        <div id="c2" class="contacto-footer" >
-            <h1  class="titulo-contacto">CONTACTO</h1>
-            <ul class="contacto-lista">
-                <li>(+54) 11 8546314</li>
-                <li>consultascacmedical@gmail.com</li>
-                <li> Alguna direccion | Bs. As. |Arg. | B1428 </li>
-                <li>Seguinos:
-                    <ul class="redes">
-                        <li class="socialmedia"><a target="_blank" href="https://www.facebook.com/"><img
-                                    src="static/images/fb.png" alt="facebook_logo"></a> </li>
-                        <li class="socialmedia"><a target="_blank" href="https://www.instagram.com/"><img
-                                    src="static/images/ig.png" alt="instagram_logo"></a></li>
-                    </ul>
-                </li>
-            </ul>
+        <div class="grupo-2">
+            <small>&copy; 2024 <b>CAC Medical</b> - Todos los Derechos Reservados</small>
         </div>
 
-        
-
-        <div class="volver-arriba">
-            <a target="_self" href="index.html">
-                <img class="volverinicio" src="images/ir_arriba.png" alt="Arriba">
-                <p>Ir arriba</p>
-            </a>
-        </div>
-
-        <p class="pie">CAC Medical 2024</p>
     </footer>
     <script type="text/javascript" src="static/js/menu_responsive.js"></script>
 </body>
