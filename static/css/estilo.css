@@ -1,0 +1,538 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+/*---Mobile First---*/
+
+
+
+body {
+    width: 100%;
+    margin: 0%;
+    font-size: 120%;
+    font-family: 'Verdana', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*HEADER*/
+header {
+    text-align: center;
+    background-color: rgb(21, 98, 102);
+    padding: 2% 0%;
+}
+
+.imglogo {
+    width: 30%;
+}
+
+/*NAV*/
+
+nav {
+    padding: 5% 0%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #c3c0c0;
+    width: 100%;
+    position: sticky;
+    top: 0%;
+    z-index: 1000;
+}
+
+.menuResponsive {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    list-style: none;
+}
+
+.menuResponsive li {
+    text-align: center;
+}
+
+.btn-menuResponsive,
+.btn-inicio {
+    margin-top: 2%;
+    width: 25%;
+}
+
+
+.menu {
+    display: none;
+}
+
+.show {
+    padding: 10% 0%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    list-style: none;
+    position: -webkit-sticky;
+}
+
+.menu .item-nav {
+    padding: 2%;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: rgb(1, 53, 80);
+}
+
+aside {
+    width: 30%;
+    background-color: #ffffff;
+    padding: 4%;
+    position: sticky;
+    top: 80%;
+    left: 90%;
+    margin-right: 3%;
+    box-shadow: 0 0 25px 2px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+aside .btn-turno {
+    font-weight: bold;
+    color: rgb(21, 98, 102)
+}
+
+
+
+/*MAIN*/
+
+
+
+/*-----------------index.html-----------------*/
+
+/* SECTION 1: Slider */
+
+.slider {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: 5% 0%;
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    list-style: none;
+    margin: 0;
+}
+
+.slider ul li {
+    overflow: hidden;
+    flex: 0 0 25%;
+    animation: slide 16s infinite;
+}
+
+.slider ul li img {
+    max-width: 100%;
+    /* Las imágenes ocupan todo el espacio disponible */
+    height: auto;
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+
+    45% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-200%);
+    }
+
+    70% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+/* SECTION 2: OPINIONES */
+#opiniones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    border-top: 1px solid #c3c0c0;
+}
+
+.titulo-opiniones {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(1, 53, 80);
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5%;
+    padding: 3%;
+}
+
+.opiniones-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.opiniones-box {
+    width: 80%;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 3%;
+    margin: 2%;
+    cursor: pointer;
+}
+
+.user-img {
+    width: 30%;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 2%;
+}
+
+.user-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name strong {
+    color: rgb(3, 90, 111);
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+}
+
+.user-name span {
+    color: #979797;
+    font-size: 1rem;
+    align-items: right;
+}
+
+.opiniones {
+    color: #f9d71c;
+    width: 60%;
+}
+
+.box-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.user-comment p {
+    font-size: 1rem;
+    color: #4b4b4b;
+    justify-items: center;
+}
+
+
+
+/*-----------------coberturas.html-----------------*/
+
+
+/*-----------------especialidades.html-----------------*/
+
+
+/*-----------------quienesSomos.html-----------------*/
+
+
+
+/*FOOTER*/
+footer {
+    width: 100%;
+    background-color: rgb(21, 98, 102);
+}
+
+footer .grupo-1 {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.grupo-1 .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 5% 0%;
+    padding: 0% 3%;
+}
+
+
+.box figure img {
+    width: 40%;
+    margin: 0% 0% 5% 0%;
+}
+
+.box h2 {
+    color: #ffffff;
+    margin-bottom: 2%;
+    margin-top: 10%;
+    font-size: 1.4rem;
+}
+
+.box p {
+    color: #efefef;
+    font-family: lucida sans;
+
+}
+
+.red-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.red-social img {
+    margin: 2%;
+    width: 7%;
+    color: #ffffff;
+    text-align: center;
+}
+
+.grupo-2 {
+    background-color: #01333E;
+    padding: 15px 10px;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+/*---small and medium devices---*/
+
+@media only screen and (min-width: 600px) {
+    /*HEADER*/
+    header{
+        padding: 1%;
+    }
+
+    .imglogo{
+        width: 15%
+    }
+
+    /*NAV*/
+
+    nav {
+        margin:0% ;
+        z-index: 1000;
+        padding: 0;
+    }
+
+    .menuResponsive {
+        display: none;
+    }
+
+
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0%;
+        padding-left: 0%;
+        list-style: none;
+        font-size: 0.8rem;
+    }
+
+    .item-nav:hover{
+        border-bottom: 3px solid rgb(21, 98, 102);   
+    }
+
+    aside {
+        padding: 0% 1% 1% 1%;
+        width: 15%;
+        left: 90%;
+        margin-right: 3%;
+        z-index: 1000;
+    }
+
+    .btn-turno {
+        font-size: 0.6rem;
+    }
+
+    aside:hover{
+        transform: scale(1.1);
+    }
+
+    /*MAIN*/
+
+
+    /*-----------------index.html-----------------*/
+
+
+    /* SECTION 1: Slider */
+
+    .slider {
+        width: 75%;
+        position: relative;
+        overflow: hidden;
+        margin: 0% 0% 5% 12%;
+    }
+
+
+    /* SECTION 2: OPINIONES */
+    
+    .opiniones-box-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .opiniones-box {
+        width: 30%;
+        padding: 2%;
+        margin: 1%;
+    }
+
+    .user-img {
+        width: 20%;
+    }
+
+    .user-name strong {
+        font-size: 0.8rem;
+    }
+
+    .user-name span {
+        font-size: 0.6rem;
+    }
+
+    .opiniones {
+        color: #f9d71c;
+        width: 50%;
+    }
+
+    .user-comment p {
+        font-size: 0.5rem;
+        color: #4b4b4b;
+        justify-items: center;
+    }
+
+    .opiniones i{
+        width: 11%;
+    }
+
+    /*-----------------coberturas.html-----------------*/
+
+
+    /*-----------------especialidades.html-----------------*/
+
+
+    /*-----------------quienesSomos.html-----------------*/
+
+
+
+    /*FOOTER*/
+
+    footer .grupo-1 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1% 0%;
+    }
+
+    .box figure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box figure img {
+        width: 30%;
+    }
+
+    .box h2 {
+        color: #ffffff;
+        margin-bottom: 2%;
+        font-size: 0.9rem;
+    }
+
+    .box p {
+        font-size: 0.6rem;
+        color: #efefef;
+        margin-bottom: 1%;
+        font-family: lucida sans;
+    }
+
+    .red-social img {
+        display: inline-block;
+        width: 5%;
+        line-height: 1%;
+        color: #ffffff;
+        margin-right: 10px;
+        text-align: center;
+        transition: all300ms ease;
+    }
+
+    .grupo-2{
+        font-size: 0.5rem;
+    }
+}
+
+/*---large and extra large devices---*/
+
+@media only screen and (min-width: 992px) {
+    /*HEADER*/
+
+
+    /*NAV*/
+
+
+    /*MAIN*/
+
+    /*-----------------index.html-----------------*/
+
+    /* SECTION 1: Slider */
+
+    .slider-box {
+        width: 750px;
+    }
+
+    /*-----------------coberturas.html-----------------*/
+
+
+    /*-----------------especialidades.html-----------------*/
+
+
+    /*-----------------quienesSomos.html-----------------*/
+
+
+
+    /*FOOTER*/
+}

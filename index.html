@@ -3,15 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-<<<<<<< HEAD
-    <meta name="viewport" content="width=device-width" initial-scale=1.0">
-    <link rel="stylesheet" href="static/css/estilos.css">
-=======
-    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="CAC Medical, clinica, consultorios, Buenos Aires, Médicos">
     <meta name="description" content="Somos una clínica especializada que proporciona servicios médicos integrales y tratamientos personalizados para satisfacer las necesidades de salud de sus pacientes.">
-    <link rel="stylesheet" href="static/css/index.css">
->>>>>>> 5bad0214f56537da1a270be418483504e77e831b
+    <link rel="stylesheet" href="static/css/estilo.css">
     <link rel="icon" href="static/images/favicon.ico">
     <script src="https://kit.fontawesome.com/283daa4351.js" crossorigin="anonymous"></script>
     <title>CAC Medical</title>
@@ -19,17 +14,13 @@
 
 <body>
     <header>
-        <!--hay que agregar el logo en la carpeta images-->
-        <a href="index.html"> <img class="imglogo" src="static/images/logo.png" alt="logo"> </a>
-        <!--solicitar turno-->
-        <a href="templates/contacto.html" class="btn-turno">Solicitar turno</a>
-
+        <a href="index.html"> <img class="imglogo" src="static/images/logos/LogoCACMedical.png" alt="logo-cac-medical"> </a>
     </header>
 
 
     <nav>
         <ul class="menuResponsive">
-            <li><a href="index.html"> Inicio</a></li>
+            <li><a><img class="btn-inicio" src="static/images/inicio.svg" href="index.html" alt="Menú"></a></li>
             <li><a><img class="btn-menuResponsive" src="static/images/menuHamburguesa.svg" alt="Menú"></a></li>
         </ul>
 
@@ -42,17 +33,20 @@
 
     </nav>
 
+    <aside>
+        <a href="templates/turnos.html" class="btn-turno">Solicitar turno</a>
+    </aside>
+    
     <main>
-        <section id="slider">
+        
+        <section class="slider">
             <!--Slider-->
-        <div class="slider-box">
             <ul>
                 <li><img src="static/images/slider/slider1.jpg" alt="slider1"></li>
                 <li><img src="static/images/slider/slider2.jpg" alt="slider2"></li>
                 <li><img src="static/images/slider/slider3.jpg" alt="slider3"></li>
                 <li><img src="static/images/slider/slider4.jpg" alt="slider4"></li>
             </ul>
-         </div>
         </section>
 
         <section id="opiniones">
@@ -144,13 +138,13 @@
         </section>
     </main>
 
-    <footer class="pie-pagina">
+    <footer>
         <div class="grupo-1">
             <!-- BOX 1 -->
             <div class="box">
                 <figure>
                     <a href="#">
-                        <img src="static/images/logos-footer/Logo CAC MEDICAL-03.png" alt="logo-cac-medical">
+                        <img src="static/images/logos/LogoCACMedical.png" alt="logo-cac-medical">
                     </a>
                 </figure>
             </div>
@@ -160,16 +154,13 @@
                 <h2>¡Hey!</h2>
                 <p>¿Queres estar al tanto de nuestras últimas novedades, promociones y noticias?</p>
                 <p>En nuestras plataformas sociales tendrás acceso a contenido exclusivo.</p>
-            </div>
-
-            <!-- BOX 3 -->
-            <div class="box">
+                
                 <h2>Seguinos</h2>
                 <div class="red-social">
-                    <img src="static/images/logos-footer/logo-instagram.png" alt="logo-instagram">
-                    <img src="static/images/logos-footer/logo-facebook.png" alt="logo-facebook">
-                    <img src="static/images/logos-footer/logo-X.png" alt="logo-X">
-                    <img src="static/images/logos-footer/logo-youtube.png" alt="logo-youtube">
+                    <img src="static/images/logos/logo-instagram.png" alt="logo-instagram">
+                    <img src="static/images/logos/logo-facebook.png" alt="logo-facebook">
+                    <img src="static/images/logos/logo-X.png" alt="logo-X">
+                    <img src="static/images/logos/logo-youtube.png" alt="logo-youtube">
                 </div>
             </div>
         </div>

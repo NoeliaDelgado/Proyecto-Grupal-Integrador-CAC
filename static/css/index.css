@@ -261,7 +261,7 @@ a:visited {
 
 .titulo-opiniones{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 3rem;
+    font-size: 1rem;
     font-weight: 500;
     padding: 40px 20px;
 }
@@ -341,7 +341,7 @@ a:visited {
     transform: translateY(-10px);
     transition: all ease 0.3s;
 }
-/* mediaqueri para large devices */
+/* mediaquery para large devices */
 @media (max-width:1440px) {
     .opiniones-box{
         width: 28%;
