@@ -437,6 +437,75 @@ footer .grupo-1 {
     color: #ffffff;
 }
 
+#form {
+    width: 70%; /* Ancho del formulario */
+    margin: 0 auto; /* Centrar el formulario */
+}
+
+label {
+    display: block; /* Mostrar etiquetas en bloques para alinearlas verticalmente */
+    margin-bottom: 3%; /* Espacio entre etiquetas y campos de entrada */
+    margin-top: 2%;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%; /* Ancho completo de los campos de entrada y select */
+    padding: 2%; /* Espaciado interno */
+    margin-bottom: 3px; /* Espacio entre campos */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 4%; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluir borde y relleno en el tamaño total */
+}
+
+select {
+    height: 20%; 
+}
+
+
+.box-mensaje {
+    margin-bottom: 5%; 
+    height: 100%;
+}
+
+.img-captcha{
+    width: 70%;
+    height: auto;
+}
+.img-recargar img {
+    width: 5%; /* Ancho de las imágenes */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+.inp-captcha {
+    width: 60%; /* Ancho del campo de entrada de captcha, dejando espacio para la imagen de recargar */
+    padding: 2%; /* Espaciado interno */
+    margin-bottom: 5%; /* Espacio entre el campo de entrada de captcha y otros elementos */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 2%; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluir borde y relleno en el tamaño total */
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 3% 6%; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 7%; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /
+}
+
+.alerta { 
+    margin-top: 10px; 
+}
 
 /*---small and medium devices---*/
 
@@ -473,7 +542,7 @@ footer .grupo-1 {
         margin: 0%;
         padding-left: 0%;
         list-style: none;
-        font-size: 0.8rem;
+        font-size: 1.5rem;
     }
 
     .item-nav:hover {
@@ -658,7 +727,59 @@ footer .grupo-1 {
 
     /*-----------------quienesSomos.html-----------------*/
 
+    /*-----------------turnos.html-----------------*/
+    #form {
+        max-width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-auto-columns: repeat(4, 1fr);
+    }
+    
+    label {
+        width: 20%;
+        text-align: right;
+        margin-right: 1%;
+        margin: 4% 0%;
+    }
+    
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        width: 20%;
+        flex: 1 1 auto; 
+        padding: 1%; 
+        margin: 3% 0%;
+        border: 1px solid #ccc;
+        border-radius: 2px; 
+        box-sizing: border-box;
+        font-size: 1.2rem;
+        font-style: italic;
+}
 
+
+    
+    .box-mensaje {
+       
+    }
+    
+    .img-captcha,
+    .img-recargar img {
+        
+    }
+    
+    .inp-captcha {
+        
+    }
+    
+    input[type="submit"] {
+           }
+    
+    input[type="submit"]:hover {
+        background-color: #45a049; 
+    }
+    
 
     /*FOOTER*/
 
