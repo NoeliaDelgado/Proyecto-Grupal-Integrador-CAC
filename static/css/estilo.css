@@ -1095,7 +1095,6 @@ footer .grupo-1 {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
     }
 
     .box figure img {
@@ -1109,9 +1108,7 @@ footer .grupo-1 {
     }
 
     .box p {
-        font-size: 0.6rem;
-        color: #efefef;
-        margin-bottom: 1%;
+        font-size: 0.9rem;
     }
 
     .red-social img {
