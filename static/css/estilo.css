@@ -265,6 +265,41 @@ aside .btn-turno {
 
 /*-----------------coberturas.html-----------------*/
 
+#galeria-coberturas{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(5,auto);
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 5vh;
+
+    padding: 10vh 3vh 10vh;
+    margin:3vh 3vh 2.5vh;
+
+    background-color: whitesmoke;
+    border-radius: 1.5%; 
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.2);
+}
+
+#galeria-coberturas img{
+    width: 20vw;
+}
+
+.baner img{
+        width: 100vw;
+
+        animation: tilt-n-move-shaking 0.25s infinite;
+    }
+
+@keyframes tilt-n-move-shaking {
+        0% { transform: translate(0, 0) rotate(0deg); }
+        25% { transform: translate(1px, 1px) rotate(0.5deg); }
+        50% { transform: translate(0, 0) rotate(0eg); }
+        75% { transform: translate(-1px, 1px) rotate(-0.5deg); }
+        100% { transform: translate(0, 0) rotate(0deg); }
+    }
+
+
 
 /*-----------------contacto.html-----------------*/
 section.contactos{
@@ -416,6 +451,48 @@ section.columna2, section#contactanos{
 
 
 /*-----------------quienesSomos.html-----------------*/
+section.quienes-somos1{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    padding: 0% 5%;
+}
+
+section.quienes-somos1 h1, section.quienes-somos1 h2 {
+    text-align: center;
+    color: #333;
+    font-size: 1rem;
+    padding: 2% 5%;
+}
+
+.video-cac{
+    justify-items: center;
+}
+.video-cac video{
+    height: 80vh;   
+}
+
+.card p, .quienes-somos1 p {
+    
+    text-align: center;
+    color: #333;
+    font-size: 0.6rem;
+    line-height: 1.2rem;
+    padding: 2%;
+}
+
+
+
+
+
+.card {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 0.7rem;
+}
 
 /*-----------------turnos.html-----------------*/
 #form {
@@ -690,6 +767,20 @@ footer .grupo-1 {
     }
 
     /*-----------------coberturas.html-----------------*/
+    
+    #galeria-coberturas{
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+        grid-template-rows: repeat(8,auto);
+    
+        margin:1vh 1vh;
+    }
+
+    #galeria-coberturas img{
+        width: 50vw;
+        column-gap: 15vh;
+    }
+
 
     /*-----------------contacto.html-----------------*/
     section.contactos{
@@ -831,6 +922,8 @@ footer .grupo-1 {
 
     /*-----------------quienesSomos.html-----------------*/
 
+    
+
     /*-----------------turnos.html-----------------*/
 
 
@@ -862,6 +955,11 @@ footer .grupo-1 {
         font-size: 0.7rem;
     }
     
+    div.seccion-captcha label{
+        font-size: 0.5rem;
+        font-weight: 200;
+    }
+
     #form .form-elements2{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -871,7 +969,7 @@ footer .grupo-1 {
 
     .box-mensaje {
         justify-self: center;
-        width: 50%;
+        width: 80%;
         margin-bottom: 2%; 
     }
 
@@ -886,8 +984,8 @@ footer .grupo-1 {
     }
 
     .img-captcha{
-        width: 50%;
-        justify-self: end;
+        width: 80%;
+        justify-self: center;
         margin-right: 2%;
     }
 
@@ -900,7 +998,7 @@ footer .grupo-1 {
     }
 
     .inp-captcha[type="text"] {
-        width: 50%;
+        width: 90%;
         height: 20%; 
         border-radius: 2%; 
         margin-bottom: 0; 
@@ -947,6 +1045,7 @@ footer .grupo-1 {
         font-size: 0.6rem;
         color: #efefef;
         margin-bottom: 1%;
+        line-height: 1.2rem;
     }
 
     .red-social img {
@@ -959,8 +1058,12 @@ footer .grupo-1 {
         transition: all300ms ease;
     }
 
+    .red-social img:hover{
+        transform: scale(1.1);
+    }
+
     .grupo-2 {
-        font-size: 0.5rem;
+        font-size: 0.7rem;
     }
 }
 
@@ -1078,11 +1181,51 @@ footer .grupo-1 {
 
     /*-----------------turnos.html-----------------*/
     
+    input[type="text"],
+    textarea[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="tel"],
+    select {  
+        font-size: 0.8rem;   
+    }
+    
+    label {
+        margin-bottom: 2%; 
+        margin-right: 4%;
+        font-size: 0.9rem;
+    }
+    
+    div.seccion-captcha label{
+        font-size: 0.7rem;
+    }
+
+    #form{
+        width: 85%;
+        padding-right: 5%;
+    }
+
+    .box-mensaje {
+        justify-self: center;
+        margin-top: 2%;
+        width: 60%;
+        margin-bottom: 2%; 
+    }
+
+    .form-elements2 .seccion-captcha{
+        width: 80%;
+    }
+
+
+    div.seccion-captcha label{
+        font-size: 0.9rem;
+        margin-left: -5%;
+    }
 
     input[type="submit"] {
-        padding: 2% 4%;
+        padding: 2% 5%;
         margin: 3% 5% 1% 5%;
-        font-size: 1.1rem;  
+        font-size: 1rem;  
     }
 
     
@@ -1104,24 +1247,15 @@ footer .grupo-1 {
     .box h2 {
         color: #ffffff;
         margin-bottom: 2%;
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
 
     .box p {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
-    .red-social img {
-        display: inline-block;
-        width: 5%;
-        line-height: 1%;
-        color: #ffffff;
-        margin-right: 10px;
-        text-align: center;
-        transition: all300ms ease;
-    }
 
     .grupo-2 {
-        font-size: 0.5rem;
+        font-size: 0.8rem;
     }
 }
