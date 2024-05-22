@@ -1,21 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-<<<<<<< HEAD
-    <meta name="viewport" content="width=device-width" initial-scale=1.0>
-    <link rel="stylesheet" href="static/css/estilos.css">
-    <link rel="icon" href="static/images/favicon.ico">
-=======
-    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="CAC Medical, clinica, consultorios, Buenos Aires, Médicos">
-    <meta name="description" content="Somos una clínica especializada que proporciona servicios médicos integrales y tratamientos personalizados para satisfacer las necesidades de salud de sus pacientes.">
-    <link rel="stylesheet" href="../static/css/especialidades.css">
+    <meta name="description"
+        content="Somos una clínica especializada que proporciona servicios médicos integrales y tratamientos personalizados para satisfacer las necesidades de salud de sus pacientes.">
+    <link rel="stylesheet" href="../static/css/estilo.css">
     <link rel="icon" href="../static/images/favicon.ico">
->>>>>>> 5bad0214f56537da1a270be418483504e77e831b
+    <script src="https://kit.fontawesome.com/283daa4351.js" crossorigin="anonymous"></script>
     <title>Especialidades</title>
 </head>
+
 <body>
-    <script type="text/javascript" src="../static/js/menu_responsive.js"></script> 
+    <header>
+        <a href="../index.html"> <img class="imglogo" src="../static/images/logos/LogoCACMedical.png"
+                alt="logo-cac-medical"> </a>
+    </header>
+
+
+    <nav>
+        <ul class="menuResponsive">
+            <li><a href="../index.html"><img class="btn-inicio" src="../static/images/inicio.svg" alt="Inicio"></a></li>
+            <li><a><img class="btn-menuResponsive" src="../static/images/menuHamburguesa.svg" alt="Menú"></a></li>
+        </ul>
+
+        <ul class="menu">
+            <li class="item-nav"><a href="../index.html">Inicio</a></li>
+            <li class="item-nav"><a href="quienesSomos.html">Quienes somos</a></li>
+            <li class="item-nav"><a href="#">Especialidades</a></li>
+            <li class="item-nav"><a href="coberturas.html">Cobertura</a></li>
+            <li class="item-nav"><a href="contacto.html">Contacto</a></li>
+        </ul>
+
+    </nav>
+
+    <aside>
+        <a href="turnos.html" class="btn-turno">Solicitar turno</a>
+    </aside>
+
+    <main>
+
+        <section id="section-especialidades">
+
+            <p>CAC Medical ofrece una amplia gama de especialidades médicas:</p>
+            <div class="especialidades-container">
+                <div class="especialidades">
+                    <div class="encabezado">
+                        <img src="../static/images/oftalmologia.svg" alt="">
+                        <h1>Oftalmología</h1>
+                        <button class='ver-mas'>
+                            <img class="expandir-img" src="../static/images/arrow.svg" id="arrow" alt="Ver-mas">
+                        </button>
+                    </div>
+                    <div class="oculto">
+                        <div class="ficha">
+                            <img src="../static/images/medicos/Medico 1.png" alt="">
+                            <div class="descripcion">
+                                <h2>Dr. Juan Torres</h2>
+                                <p class="descripcion">
+                                    Especialista en tratamiento de cataratas,
+                                    manejo de glaucoma y cirugía refractiva láser
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="especialidades">
+                    <div class="encabezado">
+                        <img src="../static/images/odontologia.svg" alt="">
+                        <h1>Odontología</h1>
+                        <button class='ver-mas'>
+                            <img class="expandir-img" src="../static/images/arrow.svg" id="arrow" alt="Ver-mas">
+                        </button>
+                    </div>
+                    <div class="oculto">
+                        <div class="ficha">
+                            <img src="../static/images/medicos/Medico 2.png" alt="">
+                            <div class="descripcion">
+                                <h2> Dra. Rosana Ferrer</h2>
+                                <p class="descripcion">
+                                    Especialista en limpiezas dentales, tratamiento de caries,
+                                    ortodoncia, implantes y carillas
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="especialidades">
+                    <div class="encabezado">
+                        <img src="../static/images/ginecologiaYObstetricia.svg" alt="">
+                        <h1>Ginecología y Obstetricia</h1>
+                        <button class='ver-mas'>
+                            <img class="expandir-img" src="../static/images/arrow.svg" id="arrow" alt="Ver-mas">
+                        </button>
+                    </div>
+                    <div class="oculto">
+                        <div class="ficha">
+                            <img src="../static/images/medicos/Medico 3.png" alt="">
+                            <div class="descripcion">
+                                <h2>Dra. Carolina Pérez</h2>
+                                <p class="descripcion">
+                                    Especialista en Tocoginecología
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="especialidades">
+                    <div class="encabezado">
+                        <img src="../static/images/otorrinolaringologia.svg" alt="">
+                        <h1>Otorrino<span class="especialidad-mobile">- </span>laringología</h1>
+                        <button class='ver-mas'>
+                            <img class="expandir-img" src="../static/images/arrow.svg" id="arrow" alt="Ver-mas">
+                        </button>
+                    </div>
+                    <div class="oculto">
+                        <div class="ficha">
+                            <img src="../static/images/medicos/Medico 4.png" alt="">
+                            <div class="descripcion">
+                                <h2>Dra. María García</h2>
+                                <p class="descripcion">
+                                    Especialista en rinoplastia y acufenos
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="especialidades">
+                    <div class="encabezado">
+                        <img src="../static/images/pediatria.svg" alt="">
+                        <h1>Pediatría</h1>
+                        <button class='ver-mas'>
+                            <img class="expandir-img" src="../static/images/arrow.svg" id="arrow" alt="Ver-mas">
+                        </button>
+                    </div>
+                    <div class="oculto">
+                        <div class="ficha">
+                            <img src="../static/images/medicos/Medico 5.png" alt="">
+                            <div class="descripcion">
+                                <h2>Dr. Marcelo Hernández</h2>
+                                <p class="descripcion">
+                                    Especialista en neurodesarrollo
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="especialidades">
+                    <div class="encabezado">
+                        <img src="../static/images/traumatologia.svg" alt="">
+                        <h1>Traumatología</h1>
+                        <button class='ver-mas'>
+                            <img class="expandir-img" src="../static/images/arrow.svg" id="arrow" alt="Ver-mas">
+                        </button>
+                    </div>
+                    <div class="oculto">
+                        <div class="ficha">
+                            <img src="../static/images/medicos/Medico 6.png" alt="">
+                            <div class="descripcion">
+                                <h2>Dr. Juan Rodríguez</h2>
+                                <p class="descripcion">
+                                    Especialidad en artroscopía de rodilla, cirugía de pierna, 
+                                    tobillo y pie
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="especialidades">
+                    <div class="encabezado">
+                        <img src="../static/images/gastroenterologia.svg" alt="">
+                        <h1>Gastro<span class="especialidad-mobile">- </span>enterología</h1>
+                        <button class='ver-mas'>
+                            <img class="expandir-img" src="../static/images/arrow.svg" id="arrow" alt="Ver-mas">
+                        </button>
+                    </div>
+                    <div class="oculto">
+                        <div class="ficha">
+                            <img src="../static/images/medicos/Medico 7.png" alt="">
+                            <div class="descripcion">
+                                <h2>Dra. Laura Gutierrez</h2>
+                                <p class="descripcion">
+                                    Especialista en enfermedad Celíaca, 
+                                    enfermedad Inflamatoria Intestinal, trastornos Digestivos Funcionales y 
+                                    Gastrostomía Percutánea Endoscópica
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="especialidades">
+                    <div class="encabezado">
+                        <img src="../static/images/cardiologia.svg" alt="">
+                        <h1>Cardiología</h1>
+                        <button class='ver-mas'>
+                            <img class="expandir-img" src="../static/images/arrow.svg" id="arrow" alt="Ver-mas">
+                        </button>
+                    </div>
+                    <div class="oculto">
+                        <div class="ficha">
+                            <img src="../static/images/medicos/Medico 8.png" alt="">
+                            <div class="descripcion">
+                                <h2>Dra. Rosita Priano</h2>
+                                <p class="descripcion">
+                                    Especialista en Cirugía Cardiovascular
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="especialidades">
+                    <div class="encabezado">
+                        <img src="../static/images/endocrinologia.svg" alt="">
+                        <h1>Endocrinología</h1>
+                        <button class='ver-mas'>
+                            <img class="expandir-img" src="../static/images/arrow.svg" id="arrow" alt="Ver-mas">
+                        </button>
+                    </div>
+                    <div class="oculto">
+                        <div class="ficha">
+                            <img src="../static/images/medicos/Medico 9.png" alt="">
+                            <div class="descripcion">
+                                <h2>Dr. Javier Rongel</h2>
+                                <p class="descripcion">
+                                    Especialista en diabetes y trastornos de la 
+                                    glándula tiroides
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="especialidades">
+                    <div class="encabezado">
+                        <img src="../static/images/infectologia.svg" alt="">
+                        <h1>Infectología</h1>
+                        <button class='ver-mas'>
+                            <img class="expandir-img" src="../static/images/arrow.svg" id="arrow" alt="Ver-mas">
+                        </button>
+                    </div>
+                    <div class="oculto">
+                        <div class="ficha">
+                            <img src="../static/images/medicos/Infectologia.png" alt="">
+                            <div class="descripcion">
+                                <h2>Dres. Juan y Melisa Azurduy</h2>
+                                <p class="descripcion">
+                                    Diagnóstico y tratamiento de condiciones de enfermedades infecciosas.
+                                    Servicios de prevención y tratamientos de pacientes con sistemas
+                                    inmunológicos comprometidos
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="especialidades">
+                    <div class="encabezado">
+                        <img src="../static/images/laboratorioDeAnalisisClinicos.svg" alt="">
+                        <h1>Laboratorio de Análisis Clínicos</h1>
+                        <button class='ver-mas'>
+                            <img class="expandir-img" src="../static/images/arrow.svg" id="arrow" alt="Ver-mas">
+                        </button>
+                    </div>
+                    <div class="oculto">
+                        <div class="ficha">
+                            <img src="../static/images/medicos/Analisis clinicos.png" alt="">
+                            <div class="descripcion">
+                                <p class="descripcion">
+                                    Analisis de sangre, orina, cultivos microbiológicos 
+                                    y pruebas de diagnóstico molecular.
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="grupo-1">
+            <!-- BOX 1 -->
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="../static/images/logos/LogoCACMedical.png" alt="logo-cac-medical">
+                    </a>
+                </figure>
+            </div>
+
+            <!-- BOX 2 -->
+            <div class="box">
+                <h2>¡Hey!</h2>
+                <p>¿Querés estar al tanto de nuestras últimas novedades, promociones y noticias?</p>
+                <p>En nuestras plataformas sociales tendrás acceso a contenido exclusivo.</p>
+
+                <h2>Seguinos</h2>
+                <div class="red-social">
+                    <img src="../static/images/logos/logo-instagram.png" alt="logo-instagram">
+                    <img src="../static/images/logos/logo-facebook.png" alt="logo-facebook">
+                    <img src="../static/images/logos/logo-X.png" alt="logo-X">
+                    <img src="../static/images/logos/logo-youtube.png" alt="logo-youtube">
+                </div>
+            </div>
+        </div>
+
+        <div class="grupo-2">
+            <small>&copy; 2024 <b>CAC Medical</b> - Todos los Derechos Reservados</small>
+        </div>
+
+    </footer>
+    <script type="text/javascript" src="../static/js/menu_responsive.js"></script>
+    <script src="../static/js/ver_mas.js"></script>
 </body>
+
 </html>

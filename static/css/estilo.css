@@ -62,18 +62,19 @@ nav {
 }
 
 .show {
-    padding: 10% 0%;
+    padding: 5% 0%;
     display: flex;
     flex-direction: column;
     text-align: center;
     list-style: none;
     position: -webkit-sticky;
+    border-top: 1px solid rgb(176, 175, 175);
 }
 
 .menu .item-nav {
-    padding: 2%;
-    border-bottom: 1px solid white;
+    line-height: 2rem;
 }
+
 
 a:link,
 a:visited {
@@ -112,7 +113,7 @@ aside .btn-turno {
     width: 100%;
     position: relative;
     overflow: hidden;
-    margin: 5% 0%;
+    margin: -15% 0% 5% 0%;
 }
 
 .slider ul {
@@ -265,12 +266,245 @@ aside .btn-turno {
 /*-----------------coberturas.html-----------------*/
 
 
+/*-----------------contacto.html-----------------*/
+section.contactos{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+    padding: 1% 10% 5% 10%;
+}
+
+#ubicacion{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    height: 35vh;
+}
+
+h1.titulo-ubicacion{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 800;
+    padding-bottom: 10%;
+}
+
+section.columna2, section#contactanos{
+    margin-top: 10%;
+}
+
+#contactanos div p{
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    color:#4b4b4b;
+}
+
+#contactanos div h1{
+    font-size: 1rem;
+    line-height: 1.7rem;
+}
+
+#visitas{
+    padding-bottom: 40px;
+}
+
+
 /*-----------------especialidades.html-----------------*/
+
+
+.especialidades h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+
+#section-especialidades p,
+.ficha .descripcion h2 {
+    margin-bottom: 2%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.especialidades-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    max-width: 100%;
+    height: auto;
+    justify-content: space-around;
+    column-gap: 1%;
+    row-gap: 1%;
+    padding: 3% 3% 40% 3%;
+}
+
+
+.especialidades {
+    display: inline-block;
+    height: auto;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.especialidades .encabezado {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    align-items: center;
+    background-color: #01333E;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+
+}
+
+.especialidades .encabezado img {
+    width: 50%;
+}
+
+.especialidades .encabezado button {
+    background-color: #01333E;
+    border: none;
+}
+
+.especialidades .encabezado button img {
+    width: 20%;
+}
+
+.especialidades img {
+    width: 30%;
+}
+
+.oculto {
+    display: none;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.arrow {
+    transition: 0.5s;
+}
+
+.ficha {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2%;
+}
+
+#section-especialidades p.descripcion {
+    padding: 2%;
+    text-align: center;
+    line-height: 1.2rem;
+    font-size: 0.8rem;
+    font-weight: 100;
+    color: #7b7979;
+}
+
+
 
 
 /*-----------------quienesSomos.html-----------------*/
 
+/*-----------------turnos.html-----------------*/
+#form {
+    width: 70%; 
+    margin: 8% auto; 
+    padding: 10% 10%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
 
+label {
+    font-size: 0.9rem; 
+    font-weight: 600;
+    display: block; 
+    margin-bottom: 3%; 
+    margin-top: 2%;
+    
+}
+
+input[type="text"],
+textarea[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%; 
+    padding: 3% 5%; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 30px; 
+    box-sizing: border-box; 
+    background-color: rgb(228, 244, 245);;
+    border: 2px solid #f0faf9;
+}
+
+select {  
+    color: gray;
+}
+
+select option{
+    background-color: white;
+    border-radius: 5px;
+}
+span.radio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+span.radio label, span.radio input[type="radio"]{
+    padding-right: 5%;
+}
+
+
+.box-mensaje {
+    margin-bottom: 5%; 
+    height: auto;
+}
+
+.img-captcha{
+    width: 90%;
+}
+
+.img-recargar {
+    width: 7%;
+    height: auto; 
+}
+
+.inp-captcha {
+    width: 60%; 
+    padding: 2%; 
+    margin-bottom: 5%; 
+    border: 1px solid #ccc; 
+    border-radius: 2%; 
+    box-sizing: border-box; 
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 3% 6%; 
+    border: none; 
+    border-radius: 15px; 
+}
+
+
+
+.alerta { 
+    margin-top: 10px; 
+}
 
 /*FOOTER*/
 footer {
@@ -333,92 +567,24 @@ footer .grupo-1 {
     color: #ffffff;
 }
 
-#form {
-    width: 70%; /* Ancho del formulario */
-    margin: 0 auto; /* Centrar el formulario */
-}
-
-label {
-    display: block; /* Mostrar etiquetas en bloques para alinearlas verticalmente */
-    margin-bottom: 3%; /* Espacio entre etiquetas y campos de entrada */
-    margin-top: 2%;
-}
-
-input[type="text"],
-input[type="number"],
-input[type="email"],
-input[type="tel"],
-select {
-    width: 100%; /* Ancho completo de los campos de entrada y select */
-    padding: 2%; /* Espaciado interno */
-    margin-bottom: 3px; /* Espacio entre campos */
-    border: 1px solid #ccc; /* Borde */
-    border-radius: 4%; /* Bordes redondeados */
-    box-sizing: border-box; /* Incluir borde y relleno en el tamaño total */
-}
-
-select {
-    height: 20%; 
-}
-
-
-.box-mensaje {
-    margin-bottom: 5%; 
-    height: 100%;
-}
-
-.img-captcha{
-    width: 70%;
-    height: auto;
-}
-.img-recargar img {
-    width: 5%; /* Ancho de las imágenes */
-    height: auto; /* Altura automática para mantener la proporción */
-}
-
-.inp-captcha {
-    width: 60%; /* Ancho del campo de entrada de captcha, dejando espacio para la imagen de recargar */
-    padding: 2%; /* Espaciado interno */
-    margin-bottom: 5%; /* Espacio entre el campo de entrada de captcha y otros elementos */
-    border: 1px solid #ccc; /* Borde */
-    border-radius: 2%; /* Bordes redondeados */
-    box-sizing: border-box; /* Incluir borde y relleno en el tamaño total */
-}
-
-input[type="submit"] {
-    background-color: #4CAF50; /* Color de fondo del botón */
-    color: white; /* Color del texto */
-    padding: 3% 6%; /* Espaciado interno */
-    border: none; /* Sin borde */
-    border-radius: 7%; /* Bordes redondeados */
-    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
-
-}
-
-input[type="submit"]:hover {
-    background-color: #45a049; /
-}
-
-.alerta { 
-    margin-top: 10px; 
-}
 
 /*---small and medium devices---*/
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 480px) {
+
     /*HEADER*/
-    header{
+    header {
         padding: 1%;
     }
 
-    .imglogo{
+    .imglogo {
         width: 15%
     }
 
     /*NAV*/
 
     nav {
-        margin:0% ;
+        margin: 0%;
         z-index: 1000;
         padding: 0;
     }
@@ -437,11 +603,11 @@ input[type="submit"]:hover {
         margin: 0%;
         padding-left: 0%;
         list-style: none;
-        font-size: 1.5rem;
+        font-size: 0.9rem;
     }
 
-    .item-nav:hover{
-        border-bottom: 3px solid rgb(21, 98, 102);   
+    .item-nav:hover {
+        border-bottom: 3px solid rgb(21, 98, 102);
     }
 
     aside {
@@ -450,13 +616,16 @@ input[type="submit"]:hover {
         left: 90%;
         margin-right: 3%;
         z-index: 1000;
+        border-radius: 5px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
     }
 
     .btn-turno {
-        font-size: 0.6rem;
+        font-size: 1rem;
+        font-weight: 800;
     }
 
-    aside:hover{
+    aside:hover {
         transform: scale(1.1);
     }
 
@@ -477,7 +646,7 @@ input[type="submit"]:hover {
 
 
     /* SECTION 2: OPINIONES */
-    
+
     .opiniones-box-container {
         display: flex;
         justify-content: center;
@@ -514,72 +683,239 @@ input[type="submit"]:hover {
         justify-items: center;
     }
 
-    .opiniones i{
+    .opiniones i {
         width: 11%;
     }
 
     /*-----------------coberturas.html-----------------*/
 
+    /*-----------------contacto.html-----------------*/
+    section.contactos{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        padding: 1% 5% 5% 5%;
+    }
 
+    
+    h1.titulo-ubicacion{
+        font-size: 1rem;
+        font-weight: 700;
+        padding-bottom: 5%;
+    }
+    
+    section.columna2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        border-top: 1px solid rgb(235, 235, 237);
+        border-bottom: 1px solid rgb(235, 235, 237);
+    }
+
+
+    section.columna2, section#contactanos{
+        margin-top: 5%;
+        justify-items: flex-end;
+        padding: 3% 2% 3% 2%;
+    }
+    
+
+    #contactanos div p{
+        font-size: 0.6rem;
+    }
+    
+    #contactanos div h1{
+        font-size: 1rem;
+        line-height: 1.7rem;
+        margin-bottom: 4%;
+    }
+    
+
+    
+
+    
     /*-----------------especialidades.html-----------------*/
+    #section-especialidades{
+        padding-bottom: 20%;
+    }
 
+    span.especialidad-mobile {
+        display: none;
+    }
+
+
+    .especialidades h1 {
+        font-size: 0.4rem;
+        font-weight: 400;
+    }
+
+
+    #section-especialidades p,
+    .ficha .descripcion h2 {
+        font-size: 0.6rem;
+        font-weight: 600;
+    }
+
+    .especialidades-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        column-gap: 4%;
+        row-gap: 5%;
+        padding: 2% 8% 5% 8%;
+    }
+
+
+    .especialidades {
+        font-size: 0.4em;
+        height: 100px;
+    }
+
+    .especialidades .encabezado {
+        display: grid;
+        grid-template-columns: auto;
+        justify-items: center;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+        padding: 0%;
+        width: 100%;
+    }
+
+    .especialidades .encabezado img {
+        width: 20%;
+    }
+
+    .especialidades .encabezado button {
+        border: none;
+        cursor: pointer;
+    }
+
+    .especialidades .encabezado button img {
+        width: 100%;
+    } 
+
+    .especialidades img {
+        width: 30%;
+    }
+
+    .ficha {
+        padding: 2%;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    #section-especialidades p.descripcion {
+        font-size: 0.4rem;
+        font-weight: 200;
+    }
+
+    .especialidades {
+        height: auto;
+        font-size: 0.6em;
+        text-align: center;
+        margin: 1%;
+        border: none;
+        box-shadow: none;
+    }
+
+    .encabezado h1{
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .encabezado h1:hover {
+        transform: scale(1.1);
+    }
+
+    
 
     /*-----------------quienesSomos.html-----------------*/
 
     /*-----------------turnos.html-----------------*/
-    #form {
-        max-width: 80%;
-        margin: 0 auto;
-        display: grid;
-        grid-auto-columns: repeat(4, 1fr);
-    }
-    
-    label {
-        width: 20%;
+
+
+    #form{
+        padding: 3% 2%;
         text-align: right;
-        margin-right: 1%;
-        margin: 4% 0%;
+        border-radius: 5px;
     }
-    
+
+    #form .form-elements{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);   
+    }
+
     input[type="text"],
+    textarea[type="text"],
     input[type="number"],
     input[type="email"],
     input[type="tel"],
     select {
-        width: 20%;
-        flex: 1 1 auto; 
-        padding: 1%; 
-        margin: 3% 0%;
-        border: 1px solid #ccc;
-        border-radius: 2px; 
-        box-sizing: border-box;
-        font-size: 1.2rem;
-        font-style: italic;
-}
-
-
+        width: 100%;
+        border-radius: 5px;  
+        font-size: 0.7rem;   
+    }
     
+    label {
+        margin-bottom: 2%; 
+        margin-right: 4%;
+        font-size: 0.7rem;
+    }
+    
+    #form .form-elements2{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;  
+        margin-top: 5%; 
+    }
+
     .box-mensaje {
-       
+        justify-self: center;
+        width: 50%;
+        margin-bottom: 2%; 
     }
-    
-    .img-captcha,
-    .img-recargar img {
-        
-    }
-    
-    .inp-captcha {
-        
-    }
-    
-    input[type="submit"] {
-           }
-    
-    input[type="submit"]:hover {
-        background-color: #45a049; 
-    }
-    
 
+    .form-elements2 .seccion-captcha{
+        padding:5% 0% ;
+        border-bottom: 1px solid rgb(240, 237, 237);
+        border-top: 1px solid rgb(240, 237, 237);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .img-captcha{
+        width: 50%;
+        justify-self: end;
+        margin-right: 2%;
+    }
+
+    .img-recargar {
+        width: 7%;
+    }
+
+    .img-recargar:hover {
+        transform: scale(1.1);
+    }
+
+    .inp-captcha[type="text"] {
+        width: 50%;
+        height: 20%; 
+        border-radius: 2%; 
+        margin-bottom: 0; 
+    }
+
+    input[type="submit"] {
+        padding: 2% 5%;
+        margin: 7% 5% 2% 5%;
+        border-radius: 5px;
+        font-size: 0.9rem; 
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    
     /*FOOTER*/
 
     footer .grupo-1 {
@@ -622,7 +958,7 @@ input[type="submit"]:hover {
         transition: all300ms ease;
     }
 
-    .grupo-2{
+    .grupo-2 {
         font-size: 0.5rem;
     }
 }
@@ -648,13 +984,108 @@ input[type="submit"]:hover {
 
     /*-----------------coberturas.html-----------------*/
 
+    /*-----------------contacto.html-----------------*/
+    section.contactos{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        column-gap: 5%;
+        padding: 3% 8% 15% 15%;
+    }
+
+    
+    h1.titulo-ubicacion{
+        text-align: left;
+        font-size: 1.3rem;
+        font-weight: 700;
+        padding-bottom: 5%;
+    }
+
+    #ubicacion{
+        height: 50vh;
+        width: 35vw;
+    }
+    
+    section.columna2{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+
+    #contactanos div p{
+        font-size: 1rem;
+        padding: 12px 12px;
+    }
+    
+    #contactanos div h1{
+        font-size: 1.2rem;
+    }
+    
+
+    
 
     /*-----------------especialidades.html-----------------*/
+
+    span.especialidad-mobile {
+        display: none;
+    }
+
+
+    .especialidades h1 {
+        font-size: 0.6rem;
+    }
+
+
+    #section-especialidades p{
+        font-size: 0.9rem; 
+    }
+
+    .ficha .descripcion h2 {
+        font-size: 0.5rem;
+    }
+
+    .especialidades-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        padding: 3% 5% 3% 5%;
+        column-gap: 2%;
+        row-gap: 5%;
+    }
+
+    .especialidades .encabezado {
+        padding: 2%;
+    }
+
+    .especialidades img {
+        width: 40%;
+    }
+
+    .ficha {
+        padding: 5%;
+    }
+
+    #section-especialidades p.descripcion {
+        padding: 1%;
+        font-size: 0.5rem;
+    }
+
+    .especialidades {
+        height: auto;
+    }
+    
 
 
     /*-----------------quienesSomos.html-----------------*/
 
+    /*-----------------turnos.html-----------------*/
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        font-size: 1.2rem;
+    }
 
-
+    input[type="submit"] {
+        font-size: 1.5rem; 
+    }
     /*FOOTER*/
 }
