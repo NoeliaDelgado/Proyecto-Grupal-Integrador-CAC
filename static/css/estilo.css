@@ -447,8 +447,9 @@ select {
     border: 1px solid #ccc; 
     border-radius: 30px; 
     box-sizing: border-box; 
-    background-color: rgb(228, 244, 245);;
+    background-color: rgb(228, 244, 245);
     border: 2px solid #f0faf9;
+    font-family: 'Verdana', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 select {  
@@ -473,6 +474,7 @@ span.radio label, span.radio input[type="radio"]{
     margin-bottom: 5%; 
     height: auto;
 }
+
 
 .img-captcha{
     width: 90%;
@@ -945,7 +947,6 @@ footer .grupo-1 {
         font-size: 0.6rem;
         color: #efefef;
         margin-bottom: 1%;
-        font-family: lucida sans;
     }
 
     .red-social img {
@@ -1076,16 +1077,54 @@ footer .grupo-1 {
     /*-----------------quienesSomos.html-----------------*/
 
     /*-----------------turnos.html-----------------*/
-    input[type="text"],
-    input[type="number"],
-    input[type="email"],
-    input[type="tel"],
-    select {
-        font-size: 1.2rem;
-    }
+    
 
     input[type="submit"] {
-        font-size: 1.5rem; 
+        padding: 2% 4%;
+        margin: 3% 5% 1% 5%;
+        font-size: 1.1rem;  
     }
+
+    
     /*FOOTER*/
+    footer .grupo-1 {
+        padding: 0%;
+    }
+
+    .box figure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .box figure img {
+        width: 30%;
+    }
+
+    .box h2 {
+        color: #ffffff;
+        margin-bottom: 2%;
+        font-size: 0.9rem;
+    }
+
+    .box p {
+        font-size: 0.6rem;
+        color: #efefef;
+        margin-bottom: 1%;
+    }
+
+    .red-social img {
+        display: inline-block;
+        width: 5%;
+        line-height: 1%;
+        color: #ffffff;
+        margin-right: 10px;
+        text-align: center;
+        transition: all300ms ease;
+    }
+
+    .grupo-2 {
+        font-size: 0.5rem;
+    }
 }
