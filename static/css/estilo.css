@@ -417,8 +417,94 @@ section.columna2, section#contactanos{
 
 /*-----------------quienesSomos.html-----------------*/
 
+/*-----------------turnos.html-----------------*/
+#form {
+    width: 70%; 
+    margin: 8% auto; 
+    padding: 10% 10%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+label {
+    font-size: 0.9rem; 
+    font-weight: 600;
+    display: block; 
+    margin-bottom: 3%; 
+    margin-top: 2%;
+    
+}
+
+input[type="text"],
+textarea[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%; 
+    padding: 3% 5%; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 30px; 
+    box-sizing: border-box; 
+    background-color: rgb(228, 244, 245);;
+    border: 2px solid #f0faf9;
+}
+
+select {  
+    color: gray;
+}
+
+select option{
+    background-color: white;
+    border-radius: 5px;
+}
+span.radio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+span.radio label, span.radio input[type="radio"]{
+    padding-right: 5%;
+}
 
 
+.box-mensaje {
+    margin-bottom: 5%; 
+    height: auto;
+}
+
+.img-captcha{
+    width: 90%;
+}
+
+.img-recargar {
+    width: 7%;
+    height: auto; 
+}
+
+.inp-captcha {
+    width: 60%; 
+    padding: 2%; 
+    margin-bottom: 5%; 
+    border: 1px solid #ccc; 
+    border-radius: 2%; 
+    box-sizing: border-box; 
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 3% 6%; 
+    border: none; 
+    border-radius: 15px; 
+}
+
+
+
+.alerta { 
+    margin-top: 10px; 
+}
 
 /*FOOTER*/
 footer {
@@ -481,75 +567,6 @@ footer .grupo-1 {
     color: #ffffff;
 }
 
-#form {
-    width: 70%; /* Ancho del formulario */
-    margin: 0 auto; /* Centrar el formulario */
-}
-
-label {
-    display: block; /* Mostrar etiquetas en bloques para alinearlas verticalmente */
-    margin-bottom: 3%; /* Espacio entre etiquetas y campos de entrada */
-    margin-top: 2%;
-}
-
-input[type="text"],
-input[type="number"],
-input[type="email"],
-input[type="tel"],
-select {
-    width: 100%; /* Ancho completo de los campos de entrada y select */
-    padding: 2%; /* Espaciado interno */
-    margin-bottom: 3px; /* Espacio entre campos */
-    border: 1px solid #ccc; /* Borde */
-    border-radius: 4%; /* Bordes redondeados */
-    box-sizing: border-box; /* Incluir borde y relleno en el tamaño total */
-}
-
-select {
-    height: 20%; 
-}
-
-
-.box-mensaje {
-    margin-bottom: 5%; 
-    height: 100%;
-}
-
-.img-captcha{
-    width: 70%;
-    height: auto;
-}
-.img-recargar img {
-    width: 5%;
-    height: auto; 
-}
-
-.inp-captcha {
-    width: 60%; 
-    padding: 2%; 
-    margin-bottom: 5%; 
-    border: 1px solid #ccc; 
-    border-radius: 2%; 
-    box-sizing: border-box; 
-}
-
-input[type="submit"] {
-    background-color: #4CAF50; 
-    color: white; 
-    padding: 3% 6%; 
-    border: none; 
-    border-radius: 7%; 
-    cursor: pointer; 
-
-}
-
-input[type="submit"]:hover {
-    background-color: #45a049; /
-}
-
-.alerta { 
-    margin-top: 10px; 
-}
 
 /*---small and medium devices---*/
 
@@ -813,59 +830,92 @@ input[type="submit"]:hover {
     /*-----------------quienesSomos.html-----------------*/
 
     /*-----------------turnos.html-----------------*/
-    #form {
-        max-width: 80%;
-        margin: 0 auto;
-        display: grid;
-        grid-auto-columns: repeat(4, 1fr);
-    }
-    
-    label {
-        width: 20%;
+
+
+    #form{
+        padding: 3% 2%;
         text-align: right;
-        margin-right: 1%;
-        margin: 4% 0%;
+        border-radius: 5px;
     }
-    
+
+    #form .form-elements{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);   
+    }
+
     input[type="text"],
+    textarea[type="text"],
     input[type="number"],
     input[type="email"],
     input[type="tel"],
     select {
-        width: 20%;
-        flex: 1 1 auto; 
-        padding: 1%; 
-        margin: 3% 0%;
-        border: 1px solid #ccc;
-        border-radius: 2px; 
-        box-sizing: border-box;
-        font-size: 1.2rem;
-        font-style: italic;
-}
-
-
+        width: 100%;
+        border-radius: 5px;  
+        font-size: 0.7rem;   
+    }
     
+    label {
+        margin-bottom: 2%; 
+        margin-right: 4%;
+        font-size: 0.7rem;
+    }
+    
+    #form .form-elements2{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;  
+        margin-top: 5%; 
+    }
+
     .box-mensaje {
-       
+        justify-self: center;
+        width: 50%;
+        margin-bottom: 2%; 
     }
-    
-    .img-captcha,
-    .img-recargar img {
-        
-    }
-    
-    .inp-captcha {
-        
-    }
-    
-    input[type="submit"] {
-           }
-    
-    input[type="submit"]:hover {
-        background-color: #45a049; 
-    }
-    
 
+    .form-elements2 .seccion-captcha{
+        padding:5% 0% ;
+        border-bottom: 1px solid rgb(240, 237, 237);
+        border-top: 1px solid rgb(240, 237, 237);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .img-captcha{
+        width: 50%;
+        justify-self: end;
+        margin-right: 2%;
+    }
+
+    .img-recargar {
+        width: 7%;
+    }
+
+    .img-recargar:hover {
+        transform: scale(1.1);
+    }
+
+    .inp-captcha[type="text"] {
+        width: 50%;
+        height: 20%; 
+        border-radius: 2%; 
+        margin-bottom: 0; 
+    }
+
+    input[type="submit"] {
+        padding: 2% 5%;
+        margin: 7% 5% 2% 5%;
+        border-radius: 5px;
+        font-size: 0.9rem; 
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    
     /*FOOTER*/
 
     footer .grupo-1 {
@@ -1025,7 +1075,17 @@ input[type="submit"]:hover {
 
     /*-----------------quienesSomos.html-----------------*/
 
+    /*-----------------turnos.html-----------------*/
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        font-size: 1.2rem;
+    }
 
-
+    input[type="submit"] {
+        font-size: 1.5rem; 
+    }
     /*FOOTER*/
 }
