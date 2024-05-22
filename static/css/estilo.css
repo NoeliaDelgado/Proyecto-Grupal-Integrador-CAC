@@ -266,6 +266,47 @@ aside .btn-turno {
 /*-----------------coberturas.html-----------------*/
 
 
+/*-----------------contacto.html-----------------*/
+section.contactos{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+    padding: 1% 10% 5% 10%;
+}
+
+#ubicacion{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    height: 35vh;
+}
+
+h1.titulo-ubicacion{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 800;
+    padding-bottom: 10%;
+}
+
+section.columna2, section#contactanos{
+    margin-top: 10%;
+}
+
+#contactanos div p{
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    color:#4b4b4b;
+}
+
+#contactanos div h1{
+    font-size: 1rem;
+    line-height: 1.7rem;
+}
+
+#visitas{
+    padding-bottom: 40px;
+}
+
+
 /*-----------------especialidades.html-----------------*/
 
 
@@ -285,7 +326,7 @@ aside .btn-turno {
 .ficha .descripcion h2 {
     margin-bottom: 2%;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
@@ -370,6 +411,9 @@ aside .btn-turno {
     font-weight: 100;
     color: #7b7979;
 }
+
+
+
 
 /*-----------------quienesSomos.html-----------------*/
 
@@ -476,26 +520,26 @@ select {
     height: auto;
 }
 .img-recargar img {
-    width: 5%; /* Ancho de las imágenes */
-    height: auto; /* Altura automática para mantener la proporción */
+    width: 5%;
+    height: auto; 
 }
 
 .inp-captcha {
-    width: 60%; /* Ancho del campo de entrada de captcha, dejando espacio para la imagen de recargar */
-    padding: 2%; /* Espaciado interno */
-    margin-bottom: 5%; /* Espacio entre el campo de entrada de captcha y otros elementos */
-    border: 1px solid #ccc; /* Borde */
-    border-radius: 2%; /* Bordes redondeados */
-    box-sizing: border-box; /* Incluir borde y relleno en el tamaño total */
+    width: 60%; 
+    padding: 2%; 
+    margin-bottom: 5%; 
+    border: 1px solid #ccc; 
+    border-radius: 2%; 
+    box-sizing: border-box; 
 }
 
 input[type="submit"] {
-    background-color: #4CAF50; /* Color de fondo del botón */
-    color: white; /* Color del texto */
-    padding: 3% 6%; /* Espaciado interno */
-    border: none; /* Sin borde */
-    border-radius: 7%; /* Bordes redondeados */
-    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 3% 6%; 
+    border: none; 
+    border-radius: 7%; 
+    cursor: pointer; 
 
 }
 
@@ -542,7 +586,7 @@ input[type="submit"]:hover {
         margin: 0%;
         padding-left: 0%;
         list-style: none;
-        font-size: 1.5rem;
+        font-size: 0.9rem;
     }
 
     .item-nav:hover {
@@ -628,7 +672,48 @@ input[type="submit"]:hover {
 
     /*-----------------coberturas.html-----------------*/
 
+    /*-----------------contacto.html-----------------*/
+    section.contactos{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        padding: 1% 5% 5% 5%;
+    }
 
+    
+    h1.titulo-ubicacion{
+        font-size: 1rem;
+        font-weight: 700;
+        padding-bottom: 5%;
+    }
+    
+    section.columna2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        border-top: 1px solid rgb(235, 235, 237);
+        border-bottom: 1px solid rgb(235, 235, 237);
+    }
+
+
+    section.columna2, section#contactanos{
+        margin-top: 5%;
+        justify-items: flex-end;
+        padding: 3% 2% 3% 2%;
+    }
+    
+
+    #contactanos div p{
+        font-size: 0.6rem;
+    }
+    
+    #contactanos div h1{
+        font-size: 1rem;
+        line-height: 1.7rem;
+        margin-bottom: 4%;
+    }
+    
+
+    
 
     
     /*-----------------especialidades.html-----------------*/
@@ -849,6 +934,43 @@ input[type="submit"]:hover {
 
     /*-----------------coberturas.html-----------------*/
 
+    /*-----------------contacto.html-----------------*/
+    section.contactos{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        column-gap: 5%;
+        padding: 3% 8% 15% 15%;
+    }
+
+    
+    h1.titulo-ubicacion{
+        text-align: left;
+        font-size: 1.3rem;
+        font-weight: 700;
+        padding-bottom: 5%;
+    }
+
+    #ubicacion{
+        height: 50vh;
+        width: 35vw;
+    }
+    
+    section.columna2{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+
+    #contactanos div p{
+        font-size: 1rem;
+        padding: 12px 12px;
+    }
+    
+    #contactanos div h1{
+        font-size: 1.2rem;
+    }
+    
+
+    
 
     /*-----------------especialidades.html-----------------*/
 
