@@ -82,6 +82,9 @@ a:visited {
     color: rgb(1, 53, 80);
 }
 
+
+/*ASIDE*/
+
 aside {
     width: 30%;
     background-color: #ffffff;
@@ -265,79 +268,94 @@ aside .btn-turno {
 
 /*-----------------coberturas.html-----------------*/
 
-#galeria-coberturas{
+#galeria-coberturas {
     display: grid;
-    grid-template-columns: repeat(3,auto);
-    grid-template-rows: repeat(5,auto);
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(5, auto);
     justify-content: space-around;
     align-items: center;
     row-gap: 5vh;
 
     padding: 10vh 3vh 10vh;
-    margin:3vh 3vh 2.5vh;
+    margin: 3vh 3vh 2.5vh;
 
     background-color: whitesmoke;
-    border-radius: 1.5%; 
-    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.2);
+    border-radius: 1.5%;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
-#galeria-coberturas img{
+#galeria-coberturas img {
     width: 20vw;
 }
 
-.baner img{
-        width: 100vw;
+.baner img {
+    width: 100vw;
 
-        animation: tilt-n-move-shaking 0.25s infinite;
-    }
+    animation: tilt-n-move-shaking 0.25s infinite;
+}
 
 @keyframes tilt-n-move-shaking {
-        0% { transform: translate(0, 0) rotate(0deg); }
-        25% { transform: translate(1px, 1px) rotate(0.5deg); }
-        50% { transform: translate(0, 0) rotate(0eg); }
-        75% { transform: translate(-1px, 1px) rotate(-0.5deg); }
-        100% { transform: translate(0, 0) rotate(0deg); }
+    0% {
+        transform: translate(0, 0) rotate(0deg);
     }
+
+    25% {
+        transform: translate(1px, 1px) rotate(0.5deg);
+    }
+
+    50% {
+        transform: translate(0, 0) rotate(0eg);
+    }
+
+    75% {
+        transform: translate(-1px, 1px) rotate(-0.5deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
 
 
 
 /*-----------------contacto.html-----------------*/
-section.contactos{
+section.contactos {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
     justify-items: center;
     padding: 1% 10% 5% 10%;
 }
 
-#ubicacion{
+#ubicacion {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
     height: 35vh;
 }
 
-h1.titulo-ubicacion{
+h1.titulo-ubicacion {
     text-align: center;
     font-size: 1.3rem;
     font-weight: 800;
     padding-bottom: 10%;
 }
 
-section.columna2, section#contactanos{
+section.columna2,
+section#contactanos {
     margin-top: 10%;
 }
 
-#contactanos div p{
+#contactanos div p {
     font-size: 0.8rem;
     line-height: 1.5rem;
-    color:#4b4b4b;
+    color: #4b4b4b;
 }
 
-#contactanos div h1{
+#contactanos div h1 {
     font-size: 1rem;
     line-height: 1.7rem;
 }
 
-#visitas{
+#visitas {
     padding-bottom: 40px;
 }
 
@@ -451,31 +469,36 @@ section.columna2, section#contactanos{
 
 
 /*-----------------quienesSomos.html-----------------*/
-section.quienes-somos1{
+section.quienes-somos1 {
     display: flex;
     flex-direction: column;
     justify-self: center;
     padding: 0% 5%;
 }
 
-section.quienes-somos1 h1, section.quienes-somos1 h2 {
+section.quienes-somos1 h1,
+section.quienes-somos1 h2 {
     text-align: center;
-    color: #333;
     font-size: 1rem;
     padding: 2% 5%;
 }
 
-.video-cac{
-    justify-items: center;
-}
-.video-cac video{
-    height: 80vh;   
+.video-cac {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
 }
 
-.card p, .quienes-somos1 p {
-    
+.video-cac video {
+    width: 90vw;
+}
+
+.card p,
+.quienes-somos1 p {
     text-align: center;
-    color: #333;
+    color: #7b7979;
     font-size: 0.6rem;
     line-height: 1.2rem;
     padding: 2%;
@@ -496,20 +519,20 @@ section.quienes-somos1 h1, section.quienes-somos1 h2 {
 
 /*-----------------turnos.html-----------------*/
 #form {
-    width: 70%; 
-    margin: 8% auto; 
+    width: 70%;
+    margin: 8% auto;
     padding: 10% 10%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
 }
 
 label {
-    font-size: 0.9rem; 
+    font-size: 0.9rem;
     font-weight: 600;
-    display: block; 
-    margin-bottom: 3%; 
+    display: block;
+    margin-bottom: 3%;
     margin-top: 2%;
-    
+
 }
 
 input[type="text"],
@@ -518,71 +541,74 @@ input[type="number"],
 input[type="email"],
 input[type="tel"],
 select {
-    width: 100%; 
-    padding: 3% 5%; 
-    margin-bottom: 15px; 
-    border: 1px solid #ccc; 
-    border-radius: 30px; 
-    box-sizing: border-box; 
+    width: 100%;
+    padding: 3% 5%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    box-sizing: border-box;
     background-color: rgb(228, 244, 245);
     border: 2px solid #f0faf9;
     font-family: 'Verdana', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-select {  
+select {
     color: gray;
 }
 
-select option{
+select option {
     background-color: white;
     border-radius: 5px;
 }
-span.radio{
+
+span.radio {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-span.radio label, span.radio input[type="radio"]{
+
+span.radio label,
+span.radio input[type="radio"] {
     padding-right: 5%;
 }
 
 
 .box-mensaje {
-    margin-bottom: 5%; 
+    margin-bottom: 5%;
     height: auto;
 }
 
 
-.img-captcha{
+.img-captcha {
     width: 90%;
 }
 
 .img-recargar {
     width: 7%;
-    height: auto; 
+    height: auto;
 }
 
 .inp-captcha {
-    width: 60%; 
-    padding: 2%; 
-    margin-bottom: 5%; 
-    border: 1px solid #ccc; 
-    border-radius: 2%; 
-    box-sizing: border-box; 
+    width: 60%;
+    padding: 2%;
+    margin-bottom: 5%;
+    border: 1px solid #ccc;
+    border-radius: 2%;
+    box-sizing: border-box;
 }
 
 input[type="submit"] {
-    background-color: #4CAF50; 
-    color: white; 
-    padding: 3% 6%; 
-    border: none; 
-    border-radius: 15px; 
+    background-color: #4CAF50;
+    color: white;
+    padding: 3% 6%;
+    border: none;
+    border-radius: 15px;
 }
 
 
 
-.alerta { 
-    margin-top: 10px; 
+.alerta {
+    margin-top: 10px;
 }
 
 /*FOOTER*/
@@ -630,11 +656,11 @@ footer .grupo-1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 5% 10%;
 }
 
-.red-social img {
-    margin: 2%;
-    width: 7%;
+.red-social a img {
+    width: 40%;
     color: #ffffff;
     text-align: center;
 }
@@ -689,14 +715,18 @@ footer .grupo-1 {
         border-bottom: 3px solid rgb(21, 98, 102);
     }
 
+
+    /*ASIDE*/
+
     aside {
         padding: 0% 1% 1% 1%;
         width: 15%;
-        left: 90%;
+        top: 87%;
+        left: 87%;
         margin-right: 3%;
         z-index: 1000;
         border-radius: 5px;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
     }
 
     .btn-turno {
@@ -744,7 +774,7 @@ footer .grupo-1 {
     }
 
     .user-name strong {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .user-name span {
@@ -757,7 +787,7 @@ footer .grupo-1 {
     }
 
     .user-comment p {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
         color: #4b4b4b;
         justify-items: center;
     }
@@ -767,67 +797,68 @@ footer .grupo-1 {
     }
 
     /*-----------------coberturas.html-----------------*/
-    
-    #galeria-coberturas{
+
+    #galeria-coberturas {
         display: grid;
-        grid-template-columns: repeat(1,auto);
-        grid-template-rows: repeat(8,auto);
-    
-        margin:1vh 1vh;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(8, auto);
+        margin: 1vh 1vh;
     }
 
-    #galeria-coberturas img{
+    #galeria-coberturas img {
         width: 50vw;
         column-gap: 15vh;
     }
 
 
     /*-----------------contacto.html-----------------*/
-    section.contactos{
+    section.contactos {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto;
         padding: 1% 5% 5% 5%;
     }
 
-    
-    h1.titulo-ubicacion{
+
+    h1.titulo-ubicacion {
         font-size: 1rem;
         font-weight: 700;
         padding-bottom: 5%;
     }
-    
-    section.columna2{
+
+    section.columna2 {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         border-top: 1px solid rgb(235, 235, 237);
         border-bottom: 1px solid rgb(235, 235, 237);
     }
 
 
-    section.columna2, section#contactanos{
+    section.columna2,
+    section#contactanos {
         margin-top: 5%;
         justify-items: flex-end;
-        padding: 3% 2% 3% 2%;
+        padding: 3% 5%;
     }
-    
 
-    #contactanos div p{
-        font-size: 0.6rem;
+
+    #contactanos div p {
+        font-size: 0.7rem;
+        color: #7b7979;
     }
-    
-    #contactanos div h1{
+
+    #contactanos div h1 {
         font-size: 1rem;
         line-height: 1.7rem;
         margin-bottom: 4%;
     }
-    
 
-    
 
-    
+
+
+
     /*-----------------especialidades.html-----------------*/
-    #section-especialidades{
+    #section-especialidades {
         padding-bottom: 20%;
     }
 
@@ -884,7 +915,7 @@ footer .grupo-1 {
 
     .especialidades .encabezado button img {
         width: 100%;
-    } 
+    }
 
     .especialidades img {
         width: 30%;
@@ -910,7 +941,7 @@ footer .grupo-1 {
         box-shadow: none;
     }
 
-    .encabezado h1{
+    .encabezado h1 {
         transition: transform 0.5s ease-in-out;
     }
 
@@ -918,24 +949,40 @@ footer .grupo-1 {
         transform: scale(1.1);
     }
 
-    
+
 
     /*-----------------quienesSomos.html-----------------*/
 
-    
+
+    section.quienes-somos1 h1,
+    section.quienes-somos1 h2 {
+        font-size: 1.2rem;
+    }
+
+    .video-cac video {
+        width: 70vw;
+    }
+
+    .card p,
+    .quienes-somos1 p {
+        text-align: center;
+        font-size: 0.8rem;
+        line-height: 1.6rem;
+    }
+
 
     /*-----------------turnos.html-----------------*/
 
 
-    #form{
+    #form {
         padding: 3% 2%;
         text-align: right;
         border-radius: 5px;
     }
 
-    #form .form-elements{
+    #form .form-elements {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);   
+        grid-template-columns: repeat(4, 1fr);
     }
 
     input[type="text"],
@@ -945,36 +992,36 @@ footer .grupo-1 {
     input[type="tel"],
     select {
         width: 100%;
-        border-radius: 5px;  
-        font-size: 0.7rem;   
+        border-radius: 5px;
+        font-size: 0.7rem;
     }
-    
+
     label {
-        margin-bottom: 2%; 
+        margin-bottom: 2%;
         margin-right: 4%;
         font-size: 0.7rem;
     }
-    
-    div.seccion-captcha label{
+
+    div.seccion-captcha label {
         font-size: 0.5rem;
         font-weight: 200;
     }
 
-    #form .form-elements2{
+    #form .form-elements2 {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        justify-items: center;  
-        margin-top: 5%; 
+        justify-items: center;
+        margin-top: 5%;
     }
 
     .box-mensaje {
         justify-self: center;
         width: 80%;
-        margin-bottom: 2%; 
+        margin-bottom: 2%;
     }
 
-    .form-elements2 .seccion-captcha{
-        padding:5% 0% ;
+    .form-elements2 .seccion-captcha {
+        padding: 5% 0%;
         border-bottom: 1px solid rgb(240, 237, 237);
         border-top: 1px solid rgb(240, 237, 237);
         display: grid;
@@ -983,7 +1030,7 @@ footer .grupo-1 {
         align-items: center;
     }
 
-    .img-captcha{
+    .img-captcha {
         width: 80%;
         justify-self: center;
         margin-right: 2%;
@@ -999,23 +1046,23 @@ footer .grupo-1 {
 
     .inp-captcha[type="text"] {
         width: 90%;
-        height: 20%; 
-        border-radius: 2%; 
-        margin-bottom: 0; 
+        height: 20%;
+        border-radius: 2%;
+        margin-bottom: 0;
     }
 
     input[type="submit"] {
         padding: 2% 5%;
         margin: 7% 5% 2% 5%;
         border-radius: 5px;
-        font-size: 0.9rem; 
+        font-size: 0.9rem;
         cursor: pointer;
     }
 
     input[type="submit"]:hover {
         background-color: #45a049;
     }
-    
+
     /*FOOTER*/
 
     footer .grupo-1 {
@@ -1048,17 +1095,14 @@ footer .grupo-1 {
         line-height: 1.2rem;
     }
 
-    .red-social img {
+    .red-social a img {
         display: inline-block;
-        width: 5%;
+        width: 30%;
         line-height: 1%;
-        color: #ffffff;
-        margin-right: 10px;
-        text-align: center;
         transition: all300ms ease;
     }
 
-    .red-social img:hover{
+    .red-social img:hover {
         transform: scale(1.1);
     }
 
@@ -1075,6 +1119,15 @@ footer .grupo-1 {
 
     /*NAV*/
 
+    nav {
+        margin: 0%;
+        z-index: 1000;
+        padding: 2%;
+    }
+
+    .menu {
+        font-size: 1.2rem;
+    }
 
     /*MAIN*/
 
@@ -1086,45 +1139,75 @@ footer .grupo-1 {
         width: 750px;
     }
 
+    /* SECTION 2: OPINIONES */
+    
+    .titulo-opiniones {
+        font-size: 1.5rem;
+    }
+
+
+    .user-name strong { 
+        font-size: 1.2rem;
+    }
+    
+    .user-name span{
+        font-size: 1rem;
+    }
+
+    .user-comment p {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+    }
+
+
+ 
+
     /*-----------------coberturas.html-----------------*/
 
     /*-----------------contacto.html-----------------*/
-    section.contactos{
+    section.contactos {
         display: grid;
         grid-template-columns: repeat(2, auto);
         column-gap: 5%;
-        padding: 3% 8% 15% 15%;
+        padding: 0% 5% 5% 5%;
+        align-items: center;
     }
 
-    
-    h1.titulo-ubicacion{
+
+    h1.titulo-ubicacion {
         text-align: left;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         font-weight: 700;
         padding-bottom: 5%;
     }
 
-    #ubicacion{
-        height: 50vh;
+    #ubicacion {
+        height: 30vh;
         width: 35vw;
     }
-    
-    section.columna2{
-        grid-template-columns: repeat(1,1fr);
-    }
-    
 
-    #contactanos div p{
-        font-size: 1rem;
+    section.columna2 {
+        grid-template-columns: repeat(1, 1fr);
+        border-left: 1px solid rgb(235, 235, 237);
+        border-top: none;
+        border-bottom: none;
+    }
+
+
+    #contactanos div p {
+        font-size: 0.8rem;
         padding: 12px 12px;
     }
-    
-    #contactanos div h1{
+
+    #contactanos div h1 {
         font-size: 1.2rem;
     }
-    
 
-    
+    section#contactanos {
+        justify-self: flex-start;
+    }
+
+
 
     /*-----------------especialidades.html-----------------*/
 
@@ -1138,8 +1221,8 @@ footer .grupo-1 {
     }
 
 
-    #section-especialidades p{
-        font-size: 0.9rem; 
+    #section-especialidades p {
+        font-size: 0.9rem;
     }
 
     .ficha .descripcion h2 {
@@ -1174,33 +1257,48 @@ footer .grupo-1 {
     .especialidades {
         height: auto;
     }
-    
+
 
 
     /*-----------------quienesSomos.html-----------------*/
 
+    section.quienes-somos1 h1,
+    section.quienes-somos1 h2 {
+        font-size: 1.5rem;
+    }
+
+    .video-cac video {
+        width: 80vw;
+    }
+
+    .card p,
+    .quienes-somos1 p {
+        font-size: 0.9rem;
+        line-height: 1.8rem;
+    }
+
     /*-----------------turnos.html-----------------*/
-    
+
     input[type="text"],
     textarea[type="text"],
     input[type="number"],
     input[type="email"],
     input[type="tel"],
-    select {  
-        font-size: 0.8rem;   
+    select {
+        font-size: 0.8rem;
     }
-    
+
     label {
-        margin-bottom: 2%; 
+        margin-bottom: 2%;
         margin-right: 4%;
         font-size: 0.9rem;
     }
-    
-    div.seccion-captcha label{
+
+    div.seccion-captcha label {
         font-size: 0.7rem;
     }
 
-    #form{
+    #form {
         width: 85%;
         padding-right: 5%;
     }
@@ -1209,15 +1307,15 @@ footer .grupo-1 {
         justify-self: center;
         margin-top: 2%;
         width: 60%;
-        margin-bottom: 2%; 
+        margin-bottom: 2%;
     }
 
-    .form-elements2 .seccion-captcha{
+    .form-elements2 .seccion-captcha {
         width: 80%;
     }
 
 
-    div.seccion-captcha label{
+    div.seccion-captcha label {
         font-size: 0.9rem;
         margin-left: -5%;
     }
@@ -1225,10 +1323,10 @@ footer .grupo-1 {
     input[type="submit"] {
         padding: 2% 5%;
         margin: 3% 5% 1% 5%;
-        font-size: 1rem;  
+        font-size: 1rem;
     }
 
-    
+
     /*FOOTER*/
     footer .grupo-1 {
         padding: 0%;
