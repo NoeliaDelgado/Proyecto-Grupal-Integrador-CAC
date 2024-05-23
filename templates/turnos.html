@@ -31,62 +31,64 @@
         </ul>
 
         </nav>
-
-        <form id="form" action=https://formspree.io/f/xleqkgyz method="POST">
-            <label for="nombre">Nombre: </label>
-            <input name="nombre" id="nombre" type="text" value="" placeholder="Nombre">
-            <label for="apellido">Apellido: </label>
-            <input name="apellido" id="apellido" type="text" value="" placeholder="Apellido">
-            <label for="dni">DNI: </label>
-            <input name="dni" id="dni" type="number"  value="" placeholder="DNI" required>
-            <label for="email">E-Mail: </label>
-            <input name="email" id="email" type="email" value="" placeholder="E-Mail" required>
-            <label for="telefono">Teléfono: </label>
-            <input name="telefono" id="telefono" type="tel" value="" placeholder="Teléfono">
-            <label for="especialidades">Especialidades:</label>
-            <select id="especialidades" name="especialidades">
-                <option disabled selected>Elija Especialidad</option>
-                <option>Cardiología</option>
-                <option>Endocrinología</option>
-                <option>Gastroenterología</option>
-                <option>Ginecología y Obstetricia</option>
-                <option>Infectología</option>
-                <option>Laboratorio de Análisis Clínicos</option>
-                <option>Odontología</option>
-                <option>Oftalmología</option>
-                <option>Otorrinolaringología</option>
-                <option>Pediatría</option>
-                <option>Traumatología</option>
-            </select>
-            <p>¿Tiene obra social?</p>
-            <span> 
-                <input type="radio" id="obraSocialSi" name="obraSocial">
-                <label for="obraSocialSi">Si</label>
-            </span>
-            <span>
-                <input type="radio" id="obraSocialNo" name="obraSocial">
-                <label for="obraSocialNo">No</label>    
-            </span>
-            
-            <div class="box-mensaje">
-                <input type="text" value="" placeholder="Mensaje" name="inp-msj">
-            </div>
-
-            <div class="form-elements2">
-                <div class="box-mensaje">
-                    <textarea type="text" value="" placeholder="Mensaje"></textarea>
+        <main>
+            <form id="form" action=https://formspree.io/f/xleqkgyz method="POST">
+                <div class="form-elements">
+                    <label for="nombre">Nombre: </label>
+                    <input name="nombre" id="nombre" type="text" value="" placeholder="Nombre">
+                    <label for="apellido">Apellido: </label>
+                    <input name="apellido" id="apellido" type="text" value="" placeholder="Apellido">
+                    <label for="dni">DNI: </label>
+                    <input name="dni" id="dni" type="number" value="" placeholder="DNI" required>
+                    <label for="email">E-Mail: </label>
+                    <input name="email" id="email" type="email" value="" placeholder="E-Mail" required>
+                    <label for="telefono">Teléfono: </label>
+                    <input name="telefono" id="telefono" type="tel" value="" placeholder="Teléfono">
+                    <label for="especialidades">Especialidades:</label>
+                    <select id="especialidades" name="especialidades">
+                        <option disabled selected>Elija Especialidad</option>
+                        <option>Cardiología</option>
+                        <option>Endocrinología</option>
+                        <option>Gastroenterología</option>
+                        <option>Ginecología y Obstetricia</option>
+                        <option>Infectología</option>
+                        <option>Laboratorio de Análisis Clínicos</option>
+                        <option>Odontología</option>
+                        <option>Oftalmología</option>
+                        <option>Otorrinolaringología</option>
+                        <option>Pediatría</option>
+                        <option>Traumatología</option>
+                    </select>
+                    <label>¿Tiene obra social?</label>
+                    <span class="radio">
+                        <input type="radio" id="obraSocialSi" name="obraSocial">
+                        <label for="obraSocialSi">Si</label>
+                        <input type="radio" id="obraSocialNo" name="obraSocial">
+                        <label for="obraSocialNo">No</label>
+                    </span>
+    
+    
                 </div>
-
-            <div class="img-recargar">
-                <img src="../static/images/img-recargar.svg" alt="">
-            </div>
-
-            <input class="inp-captcha" type="text" name="inp-captcha" value="">
-
-            <div id="error"></div>
-            <input type="submit" value="Enviar" name="enviar">
-            <div class="alerta"> </div>
-        </form>
+    
+                <div class="form-elements2">
+                    <div class="box-mensaje">
+                        <textarea type="text" value="" placeholder="Mensaje"></textarea>
+                    </div>
+    
+                    <div class="seccion-captcha">
+                        <img class="img-captcha" src="">
+                        <img class="img-recargar" src=" ../static/images/img-recargar.svg" alt="recargar-captcha">
+                        <label>Escriba el texto que ve en la imagen:</label>
+                        <input class="inp-captcha" type="text" value="">
+                    </div>
+                    <div id="error"></div>
+                    <input type="submit" value="Enviar" name="enviar">
+                    <div class="alerta"> </div>
+                </div>
+    
+            </form>
+    
+        </main>
 
 
         <footer>
@@ -106,15 +108,15 @@
                     <p>¿Queres estar al tanto de nuestras últimas novedades, promociones y noticias?</p>
                     <p>En nuestras plataformas sociales tendrás acceso a contenido exclusivo.</p>
 
-                    <h2>Seguinos</h2>
-                    <div class="red-social">
-                        <img src="../static/images/logos/logo-instagram.png" alt="logo-instagram">
-                        <img src="../static/images/logos/logo-facebook.png" alt="logo-facebook">
-                        <img src="../static/images/logos/logo-X.png" alt="logo-X">
-                        <img src="../static/images/logos/logo-youtube.png" alt="logo-youtube">
-                    </div>
+                <h2>Seguinos</h2>
+                <div class="red-social">
+                    <a href="https://www.instagram.com"><img  src="../static/images/logos/logo-instagram.png" alt="logo-instagram"></a>
+                    <a href="https://www.facebook.com"> <img  src="../static/images/logos/logo-facebook.png" alt="logo-facebook"></a>
+                    <a  href="https://x.com"><img src="../static/images/logos/logo-X.png" alt="logo-X"></a>
+                    <a href="https://www.youtube.com"> <img  src="../static/images/logos/logo-youtube.png" alt="logo-youtube"></a>
                 </div>
             </div>
+        </div>
 
             <div class="grupo-2">
                 <small>&copy; 2024 <b>CAC Medical</b> - Todos los Derechos Reservados</small>
