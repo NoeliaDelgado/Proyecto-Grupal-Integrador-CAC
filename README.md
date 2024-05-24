@@ -1,6 +1,5 @@
 # Proyecto-Grupal-Integrador-CAC
 
----  
 
 ## Comisión 24167- Grupo 22 
 
@@ -10,7 +9,6 @@
 * Torres, María Ángeles  
 * Vielma, Michelle  
 
---- 
 
 ## Descripción General del proyecto
 Este proyecto consistió en la creación de la página web de una clínica médica que denominamos CAC Medical, la cual fue diseñada de forma tal que el acceso a la información sea agradable práctico y sencillo para el usuario. Para lograr este objetivo se utilizaron los lenguajes HTML, CCS y JavaScript.
