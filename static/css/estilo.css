@@ -243,7 +243,6 @@ aside .btn-turno {
 .user-name span {
     color: #979797;
     font-size: 1rem;
-    align-items: right;
 }
 
 .opiniones {
@@ -259,7 +258,7 @@ aside .btn-turno {
 }
 
 .user-comment p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #4b4b4b;
     justify-items: center;
 }
@@ -268,7 +267,7 @@ aside .btn-turno {
 
 /*-----------------coberturas.html-----------------*/
 
-main section#galeria-coberturas{
+main div#galeria-coberturas{
     margin-left: 5%;
 }
 
@@ -311,7 +310,7 @@ main section#galeria-coberturas{
     }
 
     50% {
-        transform: translate(0, 0) rotate(0eg);
+        transform: translate(0, 0) rotate(0deg);
     }
 
     75% {
@@ -326,12 +325,11 @@ main section#galeria-coberturas{
 
 
 /*-----------------contacto.html-----------------*/
-section.contactos {
+div.contactos {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
     justify-items: center;
-    padding: 1% 10% 5% 10%;
 }
 
 #ubicacion {
@@ -339,25 +337,27 @@ section.contactos {
     height: 35vh;
 }
 
-h1.titulo-ubicacion {
+h2.titulo-ubicacion {
     text-align: center;
     font-size: 1.3rem;
     font-weight: 800;
     padding-bottom: 10%;
 }
 
-section.columna2,
-section#contactanos {
+div.columna2,
+section.contactanos {
     margin-top: 10%;
+    width: 90%;
+    padding-left: 2%;
 }
 
-#contactanos div p {
+.contactanos div p {
     font-size: 0.8rem;
     line-height: 1.5rem;
     color: #4b4b4b;
 }
 
-#contactanos div h1 {
+.contactanos div h2 {
     font-size: 1rem;
     line-height: 1.7rem;
 }
@@ -506,7 +506,7 @@ section.quienes-somos1 h2 {
 .quienes-somos1 p {
     text-align: center;
     color: #7b7979;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     line-height: 1.2rem;
     padding: 2%;
 }
@@ -804,7 +804,7 @@ footer .grupo-1 {
     }
 
     /*-----------------coberturas.html-----------------*/
-    main section#galeria-coberturas{
+    main div#galeria-coberturas{
         margin-left:6%;
     }
 
@@ -823,7 +823,7 @@ footer .grupo-1 {
     }
 
     /*-----------------contacto.html-----------------*/
-    section.contactos {
+    div.contactos {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto;
@@ -831,13 +831,13 @@ footer .grupo-1 {
     }
 
 
-    h1.titulo-ubicacion {
+    h2.titulo-ubicacion {
         font-size: 1rem;
         font-weight: 700;
         padding-bottom: 5%;
     }
 
-    section.columna2 {
+    div.columna2 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         border-top: 1px solid rgb(235, 235, 237);
@@ -845,20 +845,20 @@ footer .grupo-1 {
     }
 
 
-    section.columna2,
-    section#contactanos {
+    div.columna2,
+    section.contactanos {
         margin-top: 5%;
         justify-items: flex-end;
         padding: 3% 5%;
     }
 
 
-    #contactanos div p {
+    .contactanos div p {
         font-size: 0.7rem;
         color: #7b7979;
     }
 
-    #contactanos div h1 {
+    .contactanos div h2 {
         font-size: 1rem;
         line-height: 1.7rem;
         margin-bottom: 4%;
@@ -1191,7 +1191,7 @@ footer .grupo-1 {
     }
 
     /*-----------------contacto.html-----------------*/
-    section.contactos {
+    div.contactos {
         display: grid;
         grid-template-columns: repeat(2, auto);
         column-gap: 5%;
@@ -1200,7 +1200,7 @@ footer .grupo-1 {
     }
 
 
-    h1.titulo-ubicacion {
+    h2.titulo-ubicacion {
         text-align: left;
         font-size: 1.5rem;
         font-weight: 700;
@@ -1212,7 +1212,7 @@ footer .grupo-1 {
         width: 35vw;
     }
 
-    section.columna2 {
+    div.columna2 {
         grid-template-columns: repeat(1, 1fr);
         border-left: 1px solid rgb(235, 235, 237);
         border-top: none;
@@ -1220,16 +1220,16 @@ footer .grupo-1 {
     }
 
 
-    #contactanos div p {
+    .contactanos div p {
         font-size: 0.8rem;
         padding: 12px 12px;
     }
 
-    #contactanos div h1 {
+    .contactanos div h2 {
         font-size: 1.2rem;
     }
 
-    section#contactanos {
+    section.contactanos {
         justify-self: flex-start;
     }
 
